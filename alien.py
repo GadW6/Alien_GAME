@@ -10,6 +10,7 @@ def main():
     screen = pygame.display.set_mode((1200, 800))
     # Initialize output size monitor
     pygame.display.set_caption("==Alien==")
+    # Output game's banner
 
     # Start main loop for the game.
     while True:
