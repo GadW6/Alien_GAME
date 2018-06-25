@@ -9,5 +9,8 @@ class Spaceship:
         """Defining ship outlook and position on screen"""
         self.screen = screen
 
+        # Load the
         self.image = pygame.image.load('images/spaceship_black.png')
         self.rect = self.image.get_rect()
+        self.screen_rect = screen.get_rect()
+        
