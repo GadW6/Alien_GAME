@@ -11,4 +11,3 @@ class Spaceship:
 
         self.image = pygame.image.load('images/spaceship_black.png')
         self.rect = self.image.get_rect()
-        
