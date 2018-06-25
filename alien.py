@@ -1,16 +1,18 @@
 # This software here will maintain the main settings as well as the main starting point of the game.
 import sys
 import pygame
+from settings import Settings
 
 
 def main():
     # Root point for game to start
     pygame.init()
     # Initialize all imported pygame modules
-    screen = pygame.display.set_mode((1200, 800))
+    screen = pygame.display.set_mode((Settings.screen_height, Settings_Alien.screen_width))
     # Initialize output size monitor
     pygame.display.set_caption("==Alien==")
     # Output game's banner
+    bg_color = Settings_Alien.bg_color
 
     # Start main loop for the game.
     while True:
@@ -19,6 +21,7 @@ def main():
             if event.type == pygame.QUIT:
                 sys.exit()
         # Full display to screen
+        screen.fill(bg_color)
         pygame.display.flip()
 
 
