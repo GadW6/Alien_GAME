@@ -1,3 +1,4 @@
+# !/usr/bin/python
 # This software here will maintain the main settings as well as the main starting point of the game.
 import sys
 import pygame
